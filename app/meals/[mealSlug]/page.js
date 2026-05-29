@@ -1,11 +1,11 @@
 import Link from "next/link";
 import React from "react";
 
-const MealsPage = ({ params }) => {
+const MealsDetails = ({ params }) => {
   return (
     <main>
       <h1>Meals Page</h1>
-      <p>Meals - {params.slug}</p>
+      <p>Meals - {params.mealSlug}</p>
       <div style={{ textAlign: "center" }}>
         <p>
           <Link href={"."}>Home</Link>
@@ -22,4 +22,4 @@ const MealsPage = ({ params }) => {
   );
 };
 
-export default MealsPage;
+export default MealsDetails;
