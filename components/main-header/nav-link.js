@@ -11,7 +11,11 @@ const NavLink = ({ href, children }) => {
     <>
       <Link
         href={href}
-        className={path.startsWith(href) ? styles.active : undefined}
+        className={
+          path.startsWith(href)
+            ? `${styles.link} ${styles.active}`
+            : styles.link
+        }
       >
         {children}
       </Link>

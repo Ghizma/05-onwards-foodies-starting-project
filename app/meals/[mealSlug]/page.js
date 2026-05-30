@@ -6,18 +6,6 @@ const MealsDetails = ({ params }) => {
     <main>
       <h1>Meals Page</h1>
       <p>Meals - {params.mealSlug}</p>
-      <div style={{ textAlign: "center" }}>
-        <p>
-          <Link href={"."}>Home</Link>
-        </p>
-        <p>
-          <Link href={"/meals"}>Meals</Link>
-        </p>
-
-        <p>
-          <Link href={"/community"}>Community</Link>
-        </p>
-      </div>
     </main>
   );
 };
